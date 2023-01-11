@@ -1,18 +1,71 @@
+body {
+    font-family: Consolas;
+}
+
 #metronome {
     background-color: #222A35;
+    padding: 0.4em;
+    text-align: center;
+}
+
+#visuals {
+    background-color: #333F50;
     padding: 1em;
     margin: 2em;
-    border-radius: 2em;
     text-align: center;
 }
 
 input {
-    border-radius: 1em;
-    padding: 1em;
+    background-color: #222A35;
+    padding: 0.2em;
     margin: 0.2em;
     text-align: center;
+    color: white;
+    border-style: none;
+    font-family: Consolas;
 }
 
 #txtBPM {
-    font-size: 3em;
+    font-size: 4em;
+    width: 50vw;
+    border-radius: 0.2em;
+}
+
+#btnDecreaseBPM:hover {
+    background-color: #E04040;
+}
+
+#btnIncreaseBPM:hover {
+    background-color: #50B870;
+}
+
+#btnDecreaseBPM {
+    font-size: 2em;
+    background-color: #D00000;
+    padding: 0.6em;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
+    border-radius: 0.2em;
+}
+
+#btnIncreaseBPM {
+    font-size: 2em;
+    background-color: #00A040;
+    padding: 0.6em;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
+    border-radius: 0.2em;
+}
+
+#btnStartStop:hover {
+    background-color: #666F80;
+}
+
+#btnStartStop {
+    margin-bottom: 1em;
+    background-color: #333F50;
+    width: 90vw;
+    font-size: 2em;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
 }
