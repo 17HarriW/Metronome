@@ -4,13 +4,15 @@ const btnDecrease = document.getElementById("btnDecreaseBPM");
 const btnIncrease = document.getElementById("btnIncreaseBPM");
 const bpmInput = document.getElementById("txtBPM");
 const btnStartStop = document.getElementById("btnStartStop");
+
 const MAX_BPM = 120;
 const MIN_BPM = 50;
 var running = false;
+
 // Store the beats per minute
 var bpm = 60;
 var callback = undefined;
-
+var indicatorVisible;
 
 btnStartStop.addEventListener("click", function (e) {
     running = !running;
@@ -28,7 +30,8 @@ function setSpeedAndStart() {
 }
 
 function onTick() {
-    console.log("Tick");
+    indicatorVisible = !indicatorVisible;
+    bpmInput.style.backgroundColor = indicatorVisible ? "#666F80" : "#222A35";
 }
 
 // Add event handlers
